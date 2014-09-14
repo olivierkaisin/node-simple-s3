@@ -14,7 +14,7 @@ var client = createClient({
 });
 
 
-client.upload('./package.json', {
+client.upload('./hello-world.txt', {
   bucket: 'mydocuments',
   objectKey: 'txt/hello-world.txt',
   acl: 'public-read',
