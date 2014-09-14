@@ -1,0 +1,14 @@
+{
+  "name": "simple-s3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  },
+  "author": "Olivier Kaisin",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.0.17",
+    "bluebird": "^2.3.2",
+    "lodash": "^2.4.1"
+  }
+}
