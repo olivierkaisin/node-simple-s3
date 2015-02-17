@@ -58,7 +58,7 @@ function Client (options)
 
 
 
-Client.prototype.upload = function (filePath, options)
+Client.prototype.upload = function (file, options)
 {
   var bucket = options.bucket;
   var objectKey = options.objectKey;
@@ -72,7 +72,14 @@ Client.prototype.upload = function (filePath, options)
 
   var self = this;
 
-  return fs.readFileAsync(filePath).then(function (data) {
+  var getBuffer;
+  if (file instanceof Buffer) {
+    getBuffer = Promise.resolve(file);
+  } else {
+    getBuffer = fs.readFileAsync(file);
+  }
+
+  return getBuffer.then(function (data) {
     return self.putObject({
       Bucket: bucket,
       Key: objectKey,

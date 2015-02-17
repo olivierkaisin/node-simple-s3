@@ -9,5 +9,9 @@
     "aws-sdk": "^2.0.17",
     "bluebird": "^2.3.2",
     "lodash": "^2.4.1"
+  },
+  "repository": { 
+    "type" : "git", 
+    "url" : "https://github.com/olivierkaisin/node-simple-s3"
   }
 }

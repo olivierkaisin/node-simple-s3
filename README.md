@@ -1,5 +1,5 @@
-Simple S3 Client for Node.js
-===================================================
+# Simple S3 Client for Node.js
+
 
 A dead-simple node.js module for Amazon S3.
 
@@ -22,7 +22,6 @@ client.upload('./hello-world.txt', {
 }).then(function () {
 }).done();
 ```
-
 
 ### LICENCE
 
